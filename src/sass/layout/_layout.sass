@@ -1,0 +1,169 @@
+//============================================
+// Layout
+//============================================
+
+.l-wrap
+  +pos(0, top right bottom left)
+  min-width: 1024px
+
+.l-wrap-plcholder
+  min-height: 100%
+  width: 100%
+
+// HEader
+//============================================
+
+.l-header
+  +pos(0, top right left, fixed)
+  height: 80px
+  background: lighten($color-text,10)
+  z-index: 9000
+  border-bottom: 1px solid $color-bg
+
+.l-header_logo
+  +pos(14px 50%, top left, fixed)
+  width: 40px
+  margin-left: -16px
+// Section
+//============================================
+
+.l-section
+  +pos(80px 0, top bottom)
+  overflow: hidden
+  z-index: 100
+  transition: all .4s
+  opacity: .3
+  cursor: pointer
+
+.l-section-left
+  left: 0
+  right: 50%
+  &:hover
+    opacity: 1
+
+.l-section-right
+  left: 50%
+  right: 0
+  &:hover
+    opacity: 1
+
+
+.l-section-left
+  left: 0
+  right: 50%
+
+.l-section-right
+  left: 50%
+  right: 0
+
+// JS togglers (hook on js-section)
+
+
+.l-section.is-hover
+  &:hover
+    .l-section_intro_title
+      margin-top: -70px
+      opacity: 1
+  
+.l-section-right.is-hover
+  left: 40%
+  cursor: default
+
+.l-section-right.is-notHover
+  left: 60%
+  overflow: hidden
+
+.l-section-left.is-hover
+  right: 40%
+  cursor: default
+
+.l-section-left.is-notHover
+  right: 60%
+  overflow: hidden
+
+.l-section.is-open
+  opacity: 1
+  overflow: scroll
+  .l-section_intro_title
+    margin-top: -70px
+    opacity: 1
+    transition: all .3s .2s
+
+
+.l-section.is-closed
+  &:hover
+    .l-section_intro_title
+      margin-top: 100px
+      opacity: 0
+
+
+.l-section-right.is-open
+  left: 20%
+  cursor: default
+
+.l-section-right.is-closed
+  left: 80%
+  overflow: hidden
+
+.l-section-left.is-open
+  right: 20%
+  cursor: default
+
+.l-section-left.is-closed
+  right: 80%
+  overflow: hidden
+
+.l-section_intro
+  +size(100%)
+  background-size: cover
+  cursor: pointer
+  background-position: center
+
+.l-section_intro-left
+  background-image: url('/images/intro/left.jpg')
+
+.l-section_intro-right
+  background-image: url('/images/intro/right.jpg')
+
+
+.l-section_intro_title
+  +pos(50% 50%, top left)
+  color: $color-bg
+  text-align: center
+  margin: 0
+  font-size: 55px
+  line-height: 70px
+  font-weight: bold
+  margin: 100px 0 0 -325px
+  width: 650px
+  opacity: 0
+  transition: all .3s .0s
+
+
+.l-section_projects
+  min-height: 400px
+  padding: 50px
+
+
+// Container
+//============================================
+
+.l-container
+  max-width: $layout-width-xs
+  padding: 0 $layout-gutter-xs
+  margin: 0 auto
+
++mq($bp-sm)
+  .l-container
+    max-width: $layout-width-sm
+    padding: 0 $layout-gutter-sm
+
++mq($bp-md)
+  .l-container
+    max-width: $layout-width-md
+    padding: 0 $layout-gutter-md
+
++mq($bp-lg)
+  .l-container
+    max-width: $layout-width-lg
+    padding: 0 $layout-gutter-lg

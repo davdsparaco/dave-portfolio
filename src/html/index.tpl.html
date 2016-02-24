@@ -1,0 +1,175 @@
+\<!DOCTYPE html>
+<html lang="en">
+@@include('head.html')
+<body>
+  <div class="l-wrap">
+    <div class="l-header">
+      <img class="l-header_logo" src="/images/logo.png" alt="Davide Sparaco logo">
+      <div class="l-container">
+        <ul class="menu">
+          <li class="menu_item">
+            <a class="menu_link js-home" href="#">home</a>
+          </li>
+          <li class="menu_item">
+            <a class="menu_link js-about" href="#">about</a>
+          </li>
+          <li class="menu_item">
+            <a class="menu_link " href="/index.html"></a>
+          </li>
+          <li class="menu_item">
+            <a class="menu_link " target="_blank" href="/images/CV_Davide Sparaco.pdf">cv</a>
+          </li>
+          <li class="menu_item">
+            <a class="menu_link js-contact" href="#">contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="l-section l-section-left js-section">
+      <div class="l-section_intro l-section_intro-left">
+        <h2 class="l-section_intro_title">PRODUCT DESIGN 
+  PORTFOLIO</h2>
+      </div>
+      <div class="l-section_projects js-projects js-projects-product">
+        @@include('card.html', {
+          "image": "images/projects/fonolux/cover.jpg",
+          "title": "fonolux",
+          "text" : "sound absorbing lamp",
+          "year" : "2012",
+          "type": "product",
+          "id": "fonolux"
+        })
+        @@include('card.html', {
+          "image": "images/projects/push-bag/cover.jpg",
+          "title": "push bag",
+          "text" : "modular backpack",
+          "year" : "2012",
+          "type": "product",
+          "id": "push-bag"
+        })
+        @@include('card.html', {
+          "image": "images/projects/per-un-pelo/cover.jpg",
+          "title": "per un pelo",
+          "text" : "dynamic and space saver library",
+          "year" : "2013",
+          "type": "product",
+          "id": "per-un-pelo"
+        })        
+        @@include('card.html', {
+          "image": "images/projects/scratch-your-glasses/cover.jpg",
+          "title": "scratch your glasses",
+          "text" : "handmade vinyl eyewear ",
+          "year" : "2013",
+          "type": "product",
+          "id": "scratch-your-glasses"
+        })
+        @@include('card.html', {
+          "image": "images/projects/tagliamela/cover.jpg",
+          "title": "tagliamela",
+          "text" : "handmade vinyl eyewear ",
+          "year" : "2013",
+          "type": "product",
+          "id": "tagliamela"
+        })
+        @@include('card.html', {
+          "image": "images/projects/pimp-my-ikea-lampan-1/cover.jpg",
+          "title": "pimp my ikea lampan",
+          "text" : "abat-joure",
+          "year" : "2013",
+          "type": "product",
+          "id": "pimp-my-ikea-lampan-1"
+        })
+        @@include('card.html', {
+          "image": "images/projects/pimp-my-ikea-lampan-2/cover.jpg",
+          "title": "pimp my ikea lampan",
+          "text" : "lighted coffee table",
+          "year" : "2013",
+          "type": "product",
+          "id": "pimp-my-ikea-lampan-2"
+        })
+      </div>
+    </div>
+    <div class="l-section l-section-right js-section">
+      <div class="l-section_intro l-section_intro-right">
+        <h2 class="l-section_intro_title">VISUAL COMMUNICATION PORTFOLIO</h2>
+      </div>
+      <div class="l-section_projects js-projects js-projects-visual">
+       @@include('card.html', {
+          "image": "images/projects/alto-adige/cover.jpg",
+          "title": "alto adige - il prezzo della qualità",
+          "text" : "visual journalism",
+          "year" : "2013",
+          "type": "visual",
+          "id": "alto-adige"
+        })
+        @@include('card.html', {
+          "image": "images/projects/tesa-app/cover.jpg",
+          "title": "tesa app UI",
+          "text" : "UI design",
+          "year" : "2012",
+          "type": "visual",
+          "id": "tesa-app"
+        })
+        @@include('card.html', {
+          "image": "images/projects/jongolieri/cover.jpg",
+          "title": "jongolieri",
+          "text" : "self publishing project",
+          "year" : "2011",
+          "type": "visual",
+          "id": "jongolieri"
+        })        
+        @@include('card.html', {
+          "image": "images/projects/typo-graphic/cover.jpg",
+          "title": "typo graphic",
+          "text" : "typographical works",
+          "year" : "2011",
+          "type": "visual",
+          "id": "typo-graphic"
+        })
+        @@include('card.html', {
+          "image": "images/projects/miasa/cover.jpg",
+          "title": "MIASA GmbH",
+          "text" : "product and graphic design",
+          "year" : "2014/2015",
+          "type": "visual",
+          "id": "miasa"
+        })
+      </div>
+    </div>
+  </div>
+   <div class="l-wrap-plcholder"></div>
+  <div class="l-section-footer">
+    <div class="l-container">
+      <div class="about">
+        <h2 class="about_title">About</h2>
+        <div class="g-row">
+          <div class="g g-md-8">
+            <h3 class="about_subTitle">me</h3>
+            <p class="about_typography">Hi, my name is Davide Sparaco, I am an Italian product and graphic designer. I moved to Berlin after graduating from the Free University of Bolzano because I was given the opportunity to work for a company, which made it possible to combine both my product and graphic design skills. I've always been interested in different materials and the science/art of what I could create with them. I started my career in high school studying furniture design, as well as designing buildings and interiors. </p>
+          </div>
+          <div class="g g-md-8">
+            <h3 class="about_subTitle">experience</h3>
+            <p class="about_typography">during my studies I started approaching the design process, beginning with the conceptualisation and ending with the concrete production of my projects. The main feature that characterises me is the hands-on mentality that I also deepened during a period of study at the Bauhaus Universität Weimar. I can identify my design approach in 4 consecutive steps: research, creation, development and communication.</p>
+          </div>
+          <div class="g g-md-8">
+            <h3 class="about_subTitle">work</h3>
+            <p class="about_typography">in the last years I have had the opportunity to work in different design fields, passing through pure technical jobs as geometer, during which I improved my CAD and technical drawing skills. After that I worked as UI/UX intern in Hamburg for the company Syneo Srl, for which I developed graphics for mobile applications and designed solutions for multimedia exhibits. The most recent employment concerns product and graphic design for Miasa GmbH in Berlin. During my time at Miasa I developed Packagings, CI material, adv, POS material and I also accomplished tasks as photographer.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="l-section-contact">
+    <div class="l-container">
+      <div class="contact">
+        <div class="g-row">
+          <div class="g ">
+            <a href="mailto:davide.sparaco@gmail.com" class="contact">drop me a line</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  @@include('scripts.html')
+</body>
+</html>

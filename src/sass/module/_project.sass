@@ -1,0 +1,79 @@
+.project
+  background: rgba($color-bg, 0.98)
+  position: fixed
+  top: 0
+  width: 80%
+  z-index: 100
+  overflow: hidden
+  padding: 50px 50px 50px 10%
+  box-sizing: border-box
+
+.project-product
+  left: -100%
+  transition: left .7s
+  text-align: left
+
+.project-visual
+  right: -100%
+  transition: right .7s
+  text-align: left
+
+.project-product.is-visible
+  left: 0
+
+.project-visual.is-visible
+  right: 0
+
+.project_content
+  width: 28%
+  margin-right: 4%
+  float: left
+
+
+.project_close
+  display: block
+  z-index: 1000
+  +pos(4px 0, top right)
+.project_content_head
+  position: relative
+.project_title
+  font-size: 24px
+  font-weight: bold
+  margin: 0 0 10px
+  line-height: 1.2
+  position: relative
+  padding-right: 50px
+  z-index: -1
+
+.project_subTitle
+  font-size: 16px
+  margin: 0 0 0px
+  line-height: 1.2
+  font-weight: normal
+
+.project_date
+  font-size: 15px
+
+.project_typography
+  font-size: 14px
+  font-weight: 100
+  letter-spacing: 0.1
+  line-height: 1.7
+
+
+.project_gallery
+  width: 68%
+  position: relative
+  float: left
+  padding: 0 40px
+
+
+.gallery_nav
+  +pos(50%, top)
+  margin-top: -(icon-height(i-flickity-nav-left)/2)
+
+.gallery_nav-left
+  left: 0
+
+.gallery_nav-right
+  right: 0

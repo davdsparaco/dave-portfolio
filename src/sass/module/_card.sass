@@ -1,0 +1,34 @@
+.card
+  // width: 45%
+  position: relative
+  width: 40%
+  height: auto
+  box-sizing: border-box
+  overflow: hidden
+  margin-bottom: 20px
+  cursor: pointer
+  &:hover
+    .card_footer
+      bottom: 0
+
+.card-sizer
+  width:50%
+
+.card_footer
+  +pos(0 -300px 0, right bottom left)
+  background: rgba($black, 0.65);
+  color: white
+  transition: bottom .35s
+  padding: 20px
+
+.cart_title
+  font-size: 18px
+  margin: 0 0 10px
+
+.cart_desc
+  font-size: 18px
+  margin: 0 0 3px
+
+.cart_date
+  font-size: 18px
+  margin: 0 0 3px
